@@ -4,8 +4,8 @@
 * [箇条書きリスト](#箇条書きリスト)  
 * [番号付きリスト](#番号付きリスト)  
 * [引用](#引用)  
-* [コードの挿入(1行)](#コードの挿入(1行))
-* [コードの挿入(ブロック)](#コードの挿入(ブロック))
+* [コードの挿入(1行)](#コードの挿入1行)
+* [コードの挿入(ブロック)](#コードの挿入ブロック)
 * [強調](#強調)
 * [取り消し線](#取り消し線)
 * [水平線](#水平線)
@@ -154,4 +154,7 @@ nomal ***bold*** nomal
 |:---|:---:|---|---|---:|
 |TD|TD|セル内で<br>改行||TD|
 ***
-参考: [Markdown記法 サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7)
+##### 参考
+* [Markdown記法 サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7)  
+* [Markdown記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)  
+* [Qiita Markdownのページ内リンクの罠](https://qiita.com/hennin/items/7ee58dd7d7c013a23be7)
