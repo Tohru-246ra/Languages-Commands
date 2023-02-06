@@ -153,3 +153,5 @@ nomal ***bold*** nomal
 |TH左寄せ|TH中央寄せ|TH|TH|TH右寄せ|
 |:---|:---:|---|---|---:|
 |TD|TD|セル内で<br>改行||TD|
+***
+参考: [Markdown記法 サンプル集](https://qiita.com/tbpgr/items/989c6badefff69377da7)
