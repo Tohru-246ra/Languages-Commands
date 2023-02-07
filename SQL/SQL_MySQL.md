@@ -96,7 +96,7 @@ ON 表名1.外部キー=表名2.主キー
 INSERT INTO 表名(列1,列2, … )
 VALUES(データ1,データ2 … )
 ```
-多くの表の主キーでは [AUTO INCREMENT](#AUTOINCREMENT) が使われているため、値を入力しなくてよい(ときが殆どである)。
+多くの表の主キーでは AUTO INCREMENT (後述) が使われているため、値を入力しなくてよい(ときが殆どである)。
 #### データの更新
 ```
 UPDATE 表名
@@ -111,5 +111,44 @@ WHERE 条件
 ```
 データの更新時と同じく条件で主キーの値をしていする。
 # DDL
+#### データベースの作成
+```
+CREATE DATABASE データベース名;
+SHOW databases;       
+```
+#### テーブルの作成
+```
+CREATE TABLE 表名(列名 データ型 [オプション],
+ …
+PRIMARY KEY(列名1),
+FOREIGN KEY(列名2) REFERENCES 他の表(他の表の列1))
+DEFAULT CHARSET=utf8;
 
+SHOW tables;
+DESCRIBE 表明;    # 表のテーブル構造を表示
+```
+主なデータ型は以下の通り。
+||データ型|
+|:---:|:---:|
+|INT|整数型(4バイト)|
+|FLOAT|浮動小数点型(単精度)|
+|DOUBLE|浮動小数点型(倍精度)|
+|VARCHAR|可変長の文字列|
+|TEXT|長い文字列|
+|DATE|日付型|
+|DATETIME|日付時刻型|
 
+主なオプションは以下の通り。
+
+|オプション|機能|
+|:---:|:---:|
+|AUTO INCREMENT|列を増やすと自動で<br>インクリメントされる|
+|NOT NULL|NULLを許さない|
+|UNIQUE|列の値の重複を許さない|
+|DEFAULT 値|デフォルト値の設定|
+|CHECK(列 条件)|条件に合わないデータを許さない|
+#### テーブル、データベースの削除
+```
+DROP TABLE 表名;
+DROP DATABASE データベース名;
+```
