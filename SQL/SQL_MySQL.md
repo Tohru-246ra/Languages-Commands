@@ -4,7 +4,9 @@
 データベースや表などを定義する**DDL** (Data Definition Language) に大別される。
 ## INDEX
 * [DML(データの取得)](#DMLデータの取得)
-* [DML(データの挿入、更新、削除)](#DMLデータの挿入更新削除)
+  * [DML(データの取得)](#DMLデータの取得)
+  * []
+* [](#DMLデータの挿入更新削除)
 * [DDL](#DDL)  
 * [その他](#その他)
 # DML(データの取得)
@@ -151,4 +153,27 @@ DESCRIBE 表明;    # 表のテーブル構造を表示
 ```
 DROP TABLE 表名;
 DROP DATABASE データベース名;
+```
+#### 列(カラム)の追加
+```
+ALTER TABLE 表名 ADD COLUMN 列名 データ型;
+```
+#### 列名の変更
+```
+ALTER TABLE 表名 CHANGE COLUMN 旧列名 新列名 データ型; 
+```
+#### 列の削除
+```
+ALTER TABLE 表名 DROP COLUMN 列名;
+```
+# その他
+#### MySQLの起動、ログイン
+```
+net start mysql57
+mysql --user=root --password
+```
+#### MySQLのログアウト、停止
+```
+exit;
+net stop mysql57
 ```
