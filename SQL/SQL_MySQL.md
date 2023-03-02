@@ -143,8 +143,9 @@ PRIMARY KEY(列名1),
 FOREIGN KEY(列名2) REFERENCES 他の表(他の表の列1))
 DEFAULT CHARSET=utf8;
 
+USE 表名;
 SHOW tables;
-DESCRIBE 表明;    # 表のテーブル構造を表示
+DESCRIBE 表名;    # 表のテーブル構造を表示
 ```
 主なデータ型は以下の通り。
 ||データ型|
