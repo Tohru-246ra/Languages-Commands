@@ -133,17 +133,17 @@ WHERE 条件;
 #### データベースの作成
 ```
 CREATE DATABASE データベース名;
-SHOW databases;       
+SHOW databases;
 ```
 #### テーブルの作成
 ```
+USE データベース名;
 CREATE TABLE 表名(列名 データ型 [オプション],
  …
 PRIMARY KEY(列名1),
 FOREIGN KEY(列名2) REFERENCES 他の表(他の表の列1))
 DEFAULT CHARSET=utf8;
 
-USE 表名;
 SHOW tables;
 DESCRIBE 表名;    # 表のテーブル構造を表示
 ```
