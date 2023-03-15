@@ -188,7 +188,7 @@ ALTER TABLE 表名 DROP COLUMN 列名;
 #### MySQLの起動、ログイン
 ```
 net start mysql57
-mysql --user=root --password
+mysql --user=root --password // mysql -uroot
 ```
 #### MySQLのログアウト、停止
 ```
