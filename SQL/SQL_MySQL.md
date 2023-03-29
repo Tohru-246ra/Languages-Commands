@@ -155,6 +155,7 @@ DESCRIBE 表名;    # 表のテーブル構造を表示
 |DOUBLE|浮動小数点型(倍精度)|
 |VARCHAR|可変長の文字列|
 |TEXT|長い文字列|
+|BOOLEAN|ブール|
 |DATE|日付型|
 |DATETIME|日付時刻型|
 
