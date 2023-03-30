@@ -196,3 +196,22 @@ mysql --user=root --password // mysql -uroot
 exit;
 net stop mysql57
 ```
+#### CSVファイルの書き出し
+```
+SELECT * FROM テーブル名 
+INTO OUTFILE '/tmp/example.csv' // 書き出すディレクトリのパス
+CHARACTER SET 'utf8'
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"';
+```
+参考</br>
+https://urashita.com/archives/25205?utm_source=pocket_reader
+#### CSVファイルをインポート
+```
+LOAD DATA LOCAL INFILE '/tmp/examle.csv' // CSVファイルを保管したディレクトリまでのパス
+INTO TABLE テーブル名
+TERMINATED BY ','
+ENCLOSED BY '"';
+```
+参考</br>
+https://qiita.com/oden141/items/239a7ce3cfe3197a3ba7
