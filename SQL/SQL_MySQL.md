@@ -1,4 +1,4 @@
-# SQLクエリ(MySQL) サンプル
+# SQLクエリ(MySQL,MariaDB) サンプル
 **SQL** (Structured Query Language) は<br>
 データの挿入、更新、削除、取得等を行う**DML** (Data Manipulation Language) と<br>
 データベースや表などを定義する**DDL** (Data Definition Language) に大別される。
@@ -210,7 +210,7 @@ https://urashita.com/archives/25205?utm_source=pocket_reader
 ```
 LOAD DATA LOCAL INFILE '/tmp/examle.csv' // CSVファイルを保管したディレクトリまでのパス
 INTO TABLE テーブル名
-TERMINATED BY ','
+FIELDS TERMINATED BY ','
 ENCLOSED BY '"';
 ```
 参考</br>
