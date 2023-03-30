@@ -215,3 +215,11 @@ ENCLOSED BY '"';
 ```
 参考</br>
 https://qiita.com/oden141/items/239a7ce3cfe3197a3ba7
+
+※文字化けが起こるとき
+1. CSVファイルをメモ帳で開く
+2. 名前を付けて保存 → エンコード : UTF-8 (BOM付き)
+3. MySQLにて下記のSQL文を打つ
+```
+set character_set_database=utf8;
+```
