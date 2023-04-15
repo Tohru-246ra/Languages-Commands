@@ -11,7 +11,7 @@ web</br>
 
 ### コンテナの作り方
 
-ローカルにディレクトリをつくり、その中にcompose.yml (必要であればDockerfile) を置く
+ローカルにディレクトリをつくり、その中に compose.yml (必要であればDockerfile) を置く
 
 ```
 docker-python/
